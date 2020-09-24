@@ -5,8 +5,9 @@ dependencies:
   '@babel/parser': 7.11.5
   '@babel/traverse': 7.11.5
   '@babel/types': 7.11.5
-  '@microsoft/rush-lib': 5.34.0-pr2172.0
+  '@microsoft/rush-lib': 5.34.2
   '@rush-temp/builder': 'file:projects/builder.tgz'
+  '@rush-temp/check-clean': 'file:projects/check-clean.tgz'
   '@rush-temp/eslint-plugin-codegen': 'file:projects/eslint-plugin-codegen.tgz'
   '@rush-temp/expect-type': 'file:projects/expect-type.tgz'
   '@rush-temp/fs-syncer': 'file:projects/fs-syncer.tgz'
@@ -571,14 +572,14 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-BDPG23U0qDeAvU4f99haztXwdAg3hz4El95LkAM+tHAqqhiVzRpEGHHU8EDxT/AnxOrA65YjLBwDahdJ9pTLJQ==
-  /@microsoft/rush-lib/5.34.0-pr2172.0:
+  /@microsoft/rush-lib/5.34.2:
     dependencies:
       '@pnpm/link-bins': 5.3.13
-      '@rushstack/node-core-library': 3.32.0
-      '@rushstack/package-deps-hash': 2.4.57
-      '@rushstack/stream-collator': 4.0.0
-      '@rushstack/terminal': 0.1.0
-      '@rushstack/ts-command-line': 4.6.4
+      '@rushstack/node-core-library': 3.33.3
+      '@rushstack/package-deps-hash': 2.4.65
+      '@rushstack/stream-collator': 4.0.9
+      '@rushstack/terminal': 0.1.8
+      '@rushstack/ts-command-line': 4.6.7
       '@yarnpkg/lockfile': 1.0.2
       builtin-modules: 3.1.0
       cli-table: 0.3.1
@@ -593,7 +594,7 @@ packages:
       jszip: 3.5.0
       lodash: 4.17.20
       minimatch: 3.0.4
-      node-fetch: 2.1.2
+      node-fetch: 2.6.1
       npm-package-arg: 6.1.1
       npm-packlist: 2.1.2
       read-package-tree: 5.1.6
@@ -609,7 +610,7 @@ packages:
     engines:
       node: '>=5.6.0'
     resolution:
-      integrity: sha512-Od9lqJoX5ct91yE8J74pbmFah3DlqoDAFivxoPSlHTgNELcVhJ5LXKSJdCWpzalgo1WdSi38EEdRmj3O3LjJLA==
+      integrity: sha512-kOSG/1eRzUlFEmFpBkKsTvz0xeJdN1jSdQ2pFhtRBLNFL7W/dhrOXdqetN6cV+M+gGQWpvW4XG5zaZYH79LloQ==
   /@microsoft/tsdoc-config/0.13.6:
     dependencies:
       '@microsoft/tsdoc': 0.12.21
@@ -847,7 +848,7 @@ packages:
       eslint: ^6.0.0 || ^7.0.0
     resolution:
       integrity: sha512-+Tg+htYAKl+44IIDe6vUcFWRxSs8utmtDlRM5NZF7ogCOmDsO9acG2JnPJXIB0O1PbQIAVf6Vs5xPn2TdkHGhg==
-  /@rushstack/node-core-library/3.32.0:
+  /@rushstack/node-core-library/3.33.3:
     dependencies:
       '@types/node': 10.17.13
       colors: 1.2.5
@@ -860,27 +861,27 @@ packages:
       z-schema: 3.18.4
     dev: false
     resolution:
-      integrity: sha512-7xM++fJNvCKjbnB4k6y52uCOOu1s7PNbcSup18yfml9q2e2c1qKULy/A41SFgdD2J0L6UP2SD9K5lbQt+OoWjQ==
-  /@rushstack/package-deps-hash/2.4.57:
+      integrity: sha512-4zQgVDMPiniTkRErUzUzW9gY+OeQW/pEccywUoVA9cUAOIkjdj3efwNUbCcVLsPm1uVT0ifgFEqh38pAqAAeZA==
+  /@rushstack/package-deps-hash/2.4.65:
     dependencies:
-      '@rushstack/node-core-library': 3.32.0
+      '@rushstack/node-core-library': 3.33.3
     dev: false
     resolution:
-      integrity: sha512-2XQ7gaHfpAKo4h5g6vy/6vxaqp8VISV7LBWVUdEDtJc6KuJme7RrQwKFqrqSBy76JJoMXLmBrJFWVO9NmLL0xA==
-  /@rushstack/stream-collator/4.0.0:
+      integrity: sha512-NF7SYMANQVbJ8CLtxqcakdAOCy4zKyTdPk47hfA5RoEdEfNW7QFGvh4Pf7CynH0QIdbHaeLxQ9jrsWL8E4u69g==
+  /@rushstack/stream-collator/4.0.9:
     dependencies:
-      '@rushstack/node-core-library': 3.32.0
-      '@rushstack/terminal': 0.1.0
+      '@rushstack/node-core-library': 3.33.3
+      '@rushstack/terminal': 0.1.8
     dev: false
     resolution:
-      integrity: sha512-aGEaMCYp+f4U/Taa9fbZ92dv3vOhtmrb6p4zKkcPahJpyf34UVy/wqHBBcDLaDF5wYkZudeW2EaO0oz3Vp03+g==
-  /@rushstack/terminal/0.1.0:
+      integrity: sha512-JgB5QW2qX6vVYbKxzfrBROU41KPcS0BE9nkqnBYUcOBZc1MElW53W/5nRe6dysCL338iTmUO/DpOwJ+cBYCdkA==
+  /@rushstack/terminal/0.1.8:
     dependencies:
       '@types/node': 10.17.13
     dev: false
     resolution:
-      integrity: sha512-6q3ZH37pHXJHT6+Q3M41Xi74SltZKpJuaTpl/7dRgtxaGj+bIdW8U50S+Y60ZXlEB+ShCSHs+m7rQUQkV4sz/A==
-  /@rushstack/ts-command-line/4.6.4:
+      integrity: sha512-mj3YYH69LxQ76fR6PjHtJQf7wYWk9AKl4DZgZZ9UTehPsZEVdb2SiI9lrv2SdsKG4k9/TkrF6hJKj06c4O/kpg==
+  /@rushstack/ts-command-line/4.6.7:
     dependencies:
       '@types/argparse': 1.0.38
       argparse: 1.0.10
@@ -888,7 +889,7 @@ packages:
       string-argv: 0.3.1
     dev: false
     resolution:
-      integrity: sha512-ubIANZimyU07+ChU56LfiD36NJ8gvw1txlvUP20GYNQi4lf5N0xEnev4r+AtKkOdnowpGy60ObGmYxSUpSacpw==
+      integrity: sha512-UOEMp3cRPrrNF2yBHBM6uROmkJRrK9NfFS+tOq7jmJTjfoWSS7Esnn+XwFsnBOW7VVmQeLhL+4rKbx6EdXsejg==
   /@sinonjs/commons/1.8.1:
     dependencies:
       type-detect: 4.0.8
@@ -4492,12 +4493,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
-  /node-fetch/2.1.2:
-    dev: false
-    engines:
-      node: 4.x || >=6.0.0
-    resolution:
-      integrity: sha1-q4hOjn5X44qUR1POxwb3iNF2i7U=
   /node-fetch/2.6.1:
     dev: false
     engines:
@@ -6470,7 +6465,7 @@ packages:
   'file:projects/builder.tgz':
     dependencies:
       '@actions/github': 4.0.0
-      '@microsoft/rush-lib': 5.34.0-pr2172.0
+      '@microsoft/rush-lib': 5.34.2
       '@rushstack/eslint-config': 1.3.0_eslint@7.9.0+typescript@4.0.2
       '@types/eslint': 7.2.2
       '@types/jest': 26.0.13
@@ -6490,14 +6485,23 @@ packages:
       eson-parser: 0.0.5
       find-up: 5.0.0
       jest: 26.4.2
+      js-yaml: 3.14.0
+      lodash: 4.17.20
       prettier: 2.1.1
       ts-jest: 26.3.0_jest@26.4.2+typescript@4.0.2
       typescript: 4.0.2
     dev: false
     name: '@rush-temp/builder'
     resolution:
-      integrity: sha512-Z31iiB2U4h70+gb5aN0cUEg3sg5igkaQd2sVQp038Qk/IrntoTdza23mwdzMk3EC3K1A+8R6mGjeFiBhfS+DMQ==
+      integrity: sha512-xgvvnqF7uZwtdhcLpsJRoTYppEz672nKDvgWDDT6TmsyzNZfnBXkZ2NVCHlzR1kmn6dj5OEo2OyK5DdOfMLu4w==
       tarball: 'file:projects/builder.tgz'
+    version: 0.0.0
+  'file:projects/check-clean.tgz':
+    dev: false
+    name: '@rush-temp/check-clean'
+    resolution:
+      integrity: sha512-QfuTWfJUAp1BTmEUV285ElcHBNiJHFE60Ki9fxRauSJ2JL9Z+NPMbBJCa+MHpw2Lrh4yl8tOl9ZcQ4LuyF4UAQ==
+      tarball: 'file:projects/check-clean.tgz'
     version: 0.0.0
   'file:projects/eslint-plugin-codegen.tgz':
     dependencies:
@@ -6528,7 +6532,7 @@ packages:
     dev: false
     name: '@rush-temp/eslint-plugin-codegen'
     resolution:
-      integrity: sha512-d82dnSnDaM/NqckSHACa5ZPRxPPs8EJcoxCGLpv68klkZrYRFVLYe3ZEKZrz9pMBMH+yWapnH16RBMPMUbvNCg==
+      integrity: sha512-aTJEhd465U+n9HbKZFcoahLzm4MKp2p6dPUfFLpSBtW8mjEVZLeX6WRsr4ClYqzU0nMltEv4rN+/YfKzB1wSEQ==
       tarball: 'file:projects/eslint-plugin-codegen.tgz'
     version: 0.0.0
   'file:projects/expect-type.tgz':
@@ -6546,7 +6550,7 @@ packages:
     dev: false
     name: '@rush-temp/fs-syncer'
     resolution:
-      integrity: sha512-el6/JI0GDUvBtEOsOo/HTdszbF0c3ikNzdKjoeuFqXzPUl3cPI8xobEB3F1LMfY1xrxlH6QsguCrP+8jM65DCQ==
+      integrity: sha512-lBSL5hrGnjwdxixjHxAKKjRJN6pHzptILUNVv7L70kr4bgSogfvRtEdOAX0UTeTdX1rJmWFsOOGxzgAhTyiFmg==
       tarball: 'file:projects/fs-syncer.tgz'
     version: 0.0.0
   'file:projects/io-ts-extra.tgz':
@@ -6560,7 +6564,7 @@ packages:
     dev: false
     name: '@rush-temp/io-ts-extra'
     resolution:
-      integrity: sha512-d00uA1OL3+n8v/nq9K99mvmxjEBc50chrTHaw7FTQV96wGp1wf532giaRgtWYohWS/wotuyoE5+ZaDe4r8FvcQ==
+      integrity: sha512-0VO3IjgtcCxDczfdwWBiZVBb5FagFZCDlnLbNpaeUPXoZRLYArwX8cIWX9ZOIfma9BzuZnSr7EkHxl8rEDtFZQ==
       tarball: 'file:projects/io-ts-extra.tgz'
     version: 0.0.0
   'file:projects/memorable-moniker.tgz':
@@ -6572,7 +6576,7 @@ packages:
     dev: false
     name: '@rush-temp/memorable-moniker'
     resolution:
-      integrity: sha512-vy1pUWCkaDBU0wBtBVYNc0rXq3+/pqooAs4D7U7xuUk7sVXkJ0MhL4tww89KznG+RRsp1tpULEzSzPJdzGpo9A==
+      integrity: sha512-VvR2vSFmqal62sBUzw/2m7q8Wo1GaaptC3zzyr8DO8p6dyfQ1UkFYeAovdeLU3wLeqyyPxx7eBLR0pbhpP08dQ==
       tarball: 'file:projects/memorable-moniker.tgz'
     version: 0.0.0
 registry: ''
@@ -6583,8 +6587,9 @@ specifiers:
   '@babel/parser': ^7.9.4
   '@babel/traverse': ^7.9.0
   '@babel/types': ~7.11.5
-  '@microsoft/rush-lib': 5.34.0-pr2172.0
+  '@microsoft/rush-lib': 5.34.2
   '@rush-temp/builder': 'file:./projects/builder.tgz'
+  '@rush-temp/check-clean': 'file:./projects/check-clean.tgz'
   '@rush-temp/eslint-plugin-codegen': 'file:./projects/eslint-plugin-codegen.tgz'
   '@rush-temp/expect-type': 'file:./projects/expect-type.tgz'
   '@rush-temp/fs-syncer': 'file:./projects/fs-syncer.tgz'
