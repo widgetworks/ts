@@ -16,7 +16,7 @@ jobs:
       - run: |
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git config --global user.name "${{ github.actor }}"
-          git remote set-url origin "https://${{ github.actor }}:${{ secrets.GH_CI_TOKEN }}@github.com/${{ github.repository }}.git"
+          git remote set-url origin "https://${{ github.repository_owner }}:${{ secrets.GH_CI_TOKEN }}@github.com/${{ github.repository }}.git"
           
           node common/scripts/install-run-rush update
           
@@ -27,7 +27,7 @@ jobs:
             echo "no changes made"
           else
             git add $LOCKFILE
-            git commit -m "build: rush update result"
-            remote_repo="https://${{ github.actor }}:${{ secrets.GH_CI_TOKEN }}@github.com/${{ github.repository }}.git"
+            git commit -m "chore(deps): rush update result"
+            remote_repo="https://${{ github.repository_owner }}:${{ secrets.GH_CI_TOKEN }}@github.com/${{ github.repository }}.git"
             git push "${remote_repo}"
           fi
