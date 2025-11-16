@@ -39,7 +39,7 @@
     "glob": "^7.1.4",
     "io-ts": "^2.2.4",
     "io-ts-extra": "0.10.7",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^4.1.1",
     "lodash": "^4.17.15",
     "string.prototype.matchall": "^4.0.2"
   },
@@ -56,7 +56,7 @@
     "@types/minimatch": "~3.0.3",
     "dedent": "~0.7.0",
     "expect-type": "0.7.10",
-    "minimatch": "~3.0.4",
+    "minimatch": "~10.1.1",
     "read-pkg-up": "~7.0.1"
   },
   "peerDependencies": {
